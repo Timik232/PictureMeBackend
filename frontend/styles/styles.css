@@ -1,0 +1,281 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;    
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #87CEFA, #ADD8E6); /* Градиентный фон */
+}
+
+header {
+    background-color: #333; /* Цвет фона заголовка */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+ .auth{
+    margin-left: 20px;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.auth-span{
+    margin-left: 12px;
+}
+.auth-img{
+    img {
+        filter: invert(80%) sepia(20%) saturate(1000%) hue-rotate(180deg);
+    }
+}
+.auth:hover{
+    transition: 0.4s;
+    color: #1E90FF;
+}
+
+footer {
+    background-color: #333; /* Цвет фона подвала */
+    color: white;
+    display:flex;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom:0;
+    left:0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #B0E0E6; 
+}
+.portfolio-list {
+    width: 80%;
+    max-height: 80vh; 
+    display: flex;
+    overflow: hidden;
+    margin: 20px auto;
+    background: #B0E0E6;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #F0F8FF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    margin-top: 8px;
+    background-color: rgba(164, 161, 161, 0.2); /* Прозрачный фон */
+    border: 2px solid #6390b5; /* Обводка */
+    border-radius: 10px; /* Закругление углов */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    align-items: center;
+    /* width: 80vw; */
+}
+
+
+
+.hidden {
+    display: none;
+}
+.portfolio-item {
+    width: 80%; /* Adjust the width as needed */
+    background: #B0E0E6; /* Pastel blue background color */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+}
+.portfolio-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.radio{
+    display: flex;
+    justify-content: center;
+}
+.radio_inside{
+    display: flex;
+    flex-direction: column;
+}
+
+.description,
+.person-text,
+.photos-text,
+.cost-text,
+cost,
+.open-button {
+    margin-top: 10px;
+}
+.fio{
+    font-size: 35px;
+    text-align: center;
+}
+
+.description{
+    margin-bottom: 8px;    
+    font-size: 28px;
+    font-weight: bold;
+}
+.person_text{
+    font-size: 20px;
+}
+.cost_text {
+    margin-bottom: 2px;
+    margin-top: 12px;
+    font-size: 30px;
+}
+
+description,
+.cost-text {
+    text-align: center;
+}
+
+.person-text,
+.cost-text {
+    color: #000000;
+}
+
+.cost {
+    font-size: 30px;
+    color: #000000;
+}
+
+.rounded-button, 
+.back-button
+ {
+    width: 300px;
+    height: 52px;
+    background: #1E90FF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+.portfolio-item .rounded-button:hover {
+    background-color: rgba(0, 128, 255, 0.6); /* Прозрачный фон при наведении */
+    transition: 0.2s;
+}
+.el-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.search-container {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70vw;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.back-button{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-right: 24px;
+}
+.back-button:hover{
+    transition: 0.15s;
+    background: rgba(130, 255, 234, 0.6);
+}
+#portfolio-details {
+    display: none;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left:0%;
+    top:50%;
+    z-index: 99;
+    background: rgba(148, 196, 197, 0.9);
+    padding-top: 20px;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
+    backdrop-filter: blur(5px);
+    /* display: none; */
+}
+.close-info{
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    margin: 12px;
+    margin-bottom: 18px;
+}
+.big-avatar{
+    width: 200px;
+}
+.photographer_photo{
+    width: 700px;
+}
+.email{
+    font-size: 24px;
+    text-decoration: none;
+}
+.portfolio-info{
+    text-align: center;
+}

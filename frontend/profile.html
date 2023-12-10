@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <title>PictureMe</title>
+</head>
+<body>
+    <header class="header_row">
+        <a class="back-button" href="index.html">Назад</a>
+        <h1>Сервис для поиска и вызова фотографов PictureMe</h1>
+    </header>
+    <div class="login-wrapper">
+    <form id="login-form">
+        <h2>Авторизация</h2>
+        <label for="login-username">Логин:</label>
+        <input type="text" id="login-username" name="login" required>
+
+        <label for="login-password">Пароль:</label>
+        <input type="password" id="login-password" name="password" required>
+        <label for="showMessageAnchorLogin" id="showMessageLogin"></label>
+        <div class="button-wrapper"><button id="showMessageAnchorLogin" type="submit">Войти</button></div>
+
+        <p class="switch-form">Нет аккаунта? <a href="#" onclick="switchForm('register')">Зарегистрироваться</a></p>
+    </form>
+
+    <form id="register-form" style="display: none;">
+        <h2>Регистрация</h2>
+        <label for="register-name">Имя:</label>
+        <input type="text" id="register-name" name="photographer_name" required>
+        <label for="register-surname">Фамилия:</label>
+        <input type="text" id="register-surname" name="photographer_surname" required>
+        <label for="register-patronymic">Отчество:</label>
+        <input type="text" id="register-patronymic" name="photographer_patronymic" required>
+        <label for="register-email">Email:</label>
+        <input type="text" id="register-email" name="photographer_email" required>
+        <div class="form-row">   
+            <label> Фотограф?
+                <input type="checkbox" id="isPhotographer" name="isPhotographer" value="photographer">
+              </label>     
+        </div>
+        <label for="register-username">Логин:</label>
+        <input type="text" id="register-username" name="user_login" minlength="3" required>
+
+        <label for="register-password">Пароль:</label>
+        <input type="password" id="register-password" name="user_password" required>
+        <label for="confirm-password">Подтвердите пароль:</label>
+        <label for="confirm-password" id="confirmPasswordInput">Пароль не совпадает!</label>
+        <input type="password" id="confirm-password" name="confirm_password" minlength="3" required>
+        <label for="showMessageAnchor" id="showMessage"></label>
+        <div class="button-wrapper"><button id="showMessageAnchor" type="submit">Зарегистрироваться</button></div>
+
+        <p class="switch-form">Уже есть аккаунт? <a href="#" onclick="switchForm('login')">Авторизация</a></p>
+    </form>
+    <div id="profile" class="center" style="display: none;">        
+    </div>
+    <form id="edit-form" style="display: none;">
+        <h2>Редактирование</h2>
+        <label for="update-name">Имя:</label>
+        <input type="text" id="update-name" name="photographer_name" required>
+        <label for="update-surname">Фамилия:</label>
+        <input type="text" id="update-surname" name="photographer_surname" required>
+        <label for="update-patronymic">Отчество:</label>
+        <input type="text" id="update-patronymic" name="photographer_patronymic" required>
+        <label for="update-email">Email:</label>
+        <input type="text" id="update-email" name="photographer_email" required>
+        <div class="form-row">        
+        </div>        
+        <label for="showMessageAnchor" id="showMessage"></label>
+        <div class="button-wrapper"><button class="showMessageAnchor" type="submit" style="width: 300px; height: 52px; margin:10px;">Изменить</button></div>
+        <div class="button-wrapper"><button class="exit" id="turnback">Отмена</button></div>
+
+    </form>
+    <form id="portfolio-form" style="display: none;">
+        <h2>Создание портфолио</h2>
+        <label for="decription">Описание:</label>
+        <input type="text" id="description" name="description" required>
+        <label for="price">Стоимость:</label>
+        <input type="text" id="price" name="price" required>
+        <div class="button-wrapper"><button class="showMessageAnchor" type="submit" style="width: 300px; height: 52px; margin:10px;">Создать</button></div>
+        <div class="button-wrapper"><button class="exit" id="turnbackPortfolio">Отмена</button></div>
+
+    </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Комолов Тимур, учебный проект для баз данных</p>
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html>

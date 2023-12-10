@@ -1,0 +1,87 @@
+.login-wrapper{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;        
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-row{
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.switch-form a {
+    color: #007BFF;
+    text-decoration: none;
+}
+#confirmPasswordInput{
+    display: none;
+    color: red;
+}
+#showMessageAnchor{
+    display: block;
+}
+.button-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#showMessage, #showMessageLogin{
+    color: red;
+}
+.profile{
+    display: none;
+}
+.exit
+ {
+    width: 300px;
+    height: 52px;
+    background: #560105;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+.exit:hover{
+    transition: 0.4s;
+    background: #ff4b54;
+}
+#edit{
+    top:0;
+    cursor: pointer;
+}

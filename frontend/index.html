@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>PictureMe</title>
+</head>
+<body>
+    <header class="header_row">
+        <h1>Сервис для поиска и вызова фотографов PictureMe</h1>
+        <a class="auth" href="profile.html"><img class="auth-img" src="icons/user-inv.png" width="64px"><span class="auth-span">Авторизация</span></a>
+    </header>
+    <form>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button type="button" id="searchButton">Искать</button>
+        </div>
+        <div class="radio">
+        <div class="radio_inside">
+        <p>Сортировка по цене:</p>
+        <div>
+        <label>
+            <input type="radio" name="options" value="get" checked>
+            Без
+        </label>
+        <label>
+            <input type="radio" name="options" value="orderedDesc">
+            По убыванию
+        </label>
+        <label>
+            <input type="radio" name="options" value="ordered">
+            По возрастанию
+        </label>
+    </div>
+    </div>
+    </div>        
+    </form>    
+
+    <ul id="portfolio-list" class="center">
+    </ul>
+
+    <div id="portfolio-details" class="hidden">
+        <!-- Detailed portfolio information will be displayed here -->
+        <button class="close-info" onclick="goBack()">Вернуться</button>
+        <div id="portfolio-info"></div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Комолов Тимур, учебный проект для баз данных</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
